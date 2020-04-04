@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'shlopshlop';
+    src: url('Font/shlop-webfont.woff2') format('woff2'),
+         url('Font/shlop-webfont.woff') format('woff'),
+         url('Font/SHLOP');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'shlopshlop';
+    background-image: url("../img/police1.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
+  .home {
+    text-align: center;
+    color: red;
+    margin-top: 50px;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 80px;
+    white-space: wrap;
+  }
+
+.play {
+    margin-top: 15%;
+    margin-bottom: 30%;
+    text-align: center;
+
+}
+
+.button {
+	box-shadow: 0px 1px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:6px;
+    border:1px solid #d83526;
+    cursor:pointer;
+	color:#ffffff;
+	font-family: 'Franklin Gothic Medium';
+	font-size:30px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #b23e35;
+}
+
+.button:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color:#ce0100;
+}
+
+.button:active {
+	position:relative;
+  top:1px;
+  align-content: center;
+}
+
+@media {
+
+}
