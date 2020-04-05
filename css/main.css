@@ -1,68 +1,112 @@
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture&display=swap')
+@font-face {
+  font-family: 'shlopshlop';
+  src: url('Font/shlop-webfont.woff2') format('woff2'),
+       url('Font/shlop-webfont.woff') format('woff'),
+       url('Font/SHLOP');
+  font-weight: normal;
+  font-style: normal;
+}
 
-body {background-color: black;}
-h1 {font-size: xx-large;
-    color: red;
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Franklin Gothic Medium';
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'shlopshlop', 'arial';
+  color: red;
+  text-align: center;
+}
+
+h2{
+  background-color: red;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+h3{
+  font-weight: bold;
+  text-decoration: underline white ;
+}
+
+.instructions{
+  background-color: black;
+  color: red;
+  font-family: 'Franklin Gothic Medium', 'arial';
+  text-align: center;
+  height: auto;
+  width: auto;
+  font-weight: bolder;
+}
+
+.img{
+  border: 3px solid red;
+  height: 250px;
+  width: 250px;
+  align-content: center;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: transparent;
+  perspective: 1000px;
+  display: inline-flex;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: black;
+  color: red;
+}
+
+.flip-box-back {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  transform: rotateY(180deg);
+}
+
+.flex {
+  
+}
+
+footer{
+    background-color: Red;
     text-align: center;
-}
-.blood {
-    color:silver;
-    font-family: 'Black And White Picture';
-    text-shadow: 
-    4px 4px 1px #300000,
-    4px 6px 1px #400000,
-    4px 8px 1px #500000,
-    4px 10px 1px #600000,
-    4px 12px 1px #700000,
-    4px 14px 1px #800000,
-    4px 16px 1px #900000,
-    4px 18px 1px #A00000,
-    4px 20px 1px #B00000,
-    4px 22px 1px #C00000,
-    4px 24px 1px #D00000,
-    4px 26px 1px #E00000,
-    4px 28px 1px #F00000,
-    4px 30px 1px #FA0000,
-    4px 32px 1px #FB0000,
-    4px 34px 1px #FC0000,
-    4px 36px 1px #FD0000,
-    4px 38px 1px #FE0000,
-    4px 40px 2px #FF0000;
-}
-.div { 
-    background-position: fixed;
-    top: 0;
-    left: 0;
-    /* preserve aspect ratio */
-    min-width: 100%;
-    min-height: 100%;
+    color:white;
+    font-size: large;
 }
 
-nav{
-    text-align: center;
-}​
-
-#logo{
-    width: 40px;
-    height: 40px;
-}
-
-p{
-    text-align: center;
-}
-
-li{
-    text-align: right;
-}
-
-.imtip {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-#footer{
-    color: aqua;
-    text-align: center;
+a{
+  color: white;
 }

@@ -1,0 +1,112 @@
+/* CSS Document */
+
+@font-face {
+  font-family: 'shlopshlop';
+  src: url('Font/shlop-webfont.woff2') format('woff2'),
+       url('Font/shlop-webfont.woff') format('woff'),
+       url('Font/SHLOP');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Franklin Gothic Medium';
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'shlopshlop', 'arial';
+  color: red;
+  text-align: center;
+}
+
+h2{
+  background-color: red;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+h3{
+  font-weight: bold;
+  text-decoration: underline white ;
+}
+
+.instructions{
+  background-color: black;
+  color: red;
+  font-family: 'Franklin Gothic Medium', 'arial';
+  text-align: center;
+  height: auto;
+  width: auto;
+  font-weight: bolder;
+}
+
+.img{
+  border: 3px solid red;
+  height: 250px;
+  width: 250px;
+  align-content: center;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: transparent;
+  perspective: 1000px;
+  display: inline-flex;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: black;
+  color: red;
+}
+
+.flip-box-back {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  transform: rotateY(180deg);
+}
+
+.flex {
+  
+}
+
+footer{
+    background-color: Red;
+    text-align: center;
+    color:white;
+    font-size: large;
+}
+
+a{
+  color: white;
+}

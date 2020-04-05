@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Case 1</title>
+    <link href ="CSS/memory.css" rel="stylesheet" type="text/css">
+    <script src = "js/app.js"></script>
+    <script src = "js/theDOM.js"></script>
+</head>
+
+<body>
+    <h1>Can You Solve The Riddle!</h1>
+
+    <div class= "overlay-text">
+        Click to Start
+    </div>
+    <div id="game-over-text" class= "overlay-text">
+        GAME OVER
+        <span class= "overlay-text-small"> Click to Restart</span>
+    </div>
+    <div id="case-solved-text" class= "overlay-text">
+        Case Solved
+        <span class= "overlay-text-small"> Click to Restart</span>
+    </div>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time <span id="time-remaining">100</span>
+            </div>
+            <div class="game-info">
+                Flips <span id="flips">0</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/bloody-knife.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/bloody-knife.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/Mask.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/Mask.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/Jeans.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/Jeans.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/Wallet.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/Wallet.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/Hoodie.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/Hoodie.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/footprint.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/footprint.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/Cigarette-butt.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/Cigarette-butt.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/hair-strand.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="bloody-handprint" src="img/bloody-handprint.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="blood-splatter blood-splatter-top-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-top-right" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-left" src="img/blood-splatter.png">
+                <img class="blood-splatter blood-splatter-bottom-right" src="img/blood-splatter.png">
+                <img class="card-value" src="img/hair-strand.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<br>
+<hr>
+<footer>
+    <p> Made with &#10084; by Emma & Zio.</p>
+    <div><a href="./aboutus.html">About Us</a></div>
+    <div><a href="./rating.html">High Five</a></div>
+    <div><a href="mailto:riddles@example.com">Contact Us</a></div>
+</footer>
+</html>
