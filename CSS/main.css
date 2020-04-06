@@ -1,0 +1,123 @@
+/* CSS Document */
+
+@font-face {
+  font-family: 'shlopshlop';
+  src: url('Font/shlop-webfont.woff2') format('woff2'),
+       url('Font/shlop-webfont.woff') format('woff'),
+       url('Font/SHLOP');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url("../img/scene.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: auto;
+  background-color: black;
+  color: white;
+  font-family: 'Franklin Gothic Medium';
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'shlopshlop', 'arial';
+  text-shadow: 2px 2px 4px #000000;
+  color: red;
+  text-align: center;
+}
+
+h2{
+  background-color: red;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+h3{
+  font-weight: bold;
+  text-decoration: underline white;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.instructions {
+  color: red;
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Franklin Gothic Medium', 'arial';
+  text-align: center;
+  height: auto;
+  width: auto;
+  font-weight: bolder;
+}
+
+.img{
+  border: 3px solid red;
+  height: 250px;
+  width: 250px;
+  align-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  border: transparent;
+  margin: 10px;  
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: black;
+  color: red;
+}
+
+.flip-box-back {
+  background-color: red;
+  color: white;
+  padding: 10px 10px 0px 10px;
+  transform: rotateY(180deg);
+}
+
+
+footer{
+    background-color: Red;
+    text-align: center;
+    color:white;
+    font-size: large;
+    text-shadow: 2px 1px 2px #000000;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+
+a{
+  color: white;
+}
