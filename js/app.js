@@ -1,10 +1,10 @@
 class AudioController {
     constructor() {
-        this.bgMusic = new Audio('Assets/Audio/creepy.mp3');
-        this.flipSound = new Audio('Assets/Audio/flip.wav');
-        this.matchSound = new Audio('Assets/Audio/match.wav');
-        this.victorySound = new Audio('Assets/Audio/victory.wav');
-        this.gameOverSound = new Audio('Assets/Audio/gameOver.wav');
+        this.bgMusic = new Audio('../sound/crimescene.mp3');
+        this.flipSound = new Audio('../sound/flip.mp3');
+        this.matchSound = new Audio('../sound/match.wav');
+        this.caseSolvedSound = new Audio('../sound/victory.mp3');
+        this.gameOverSound = new Audio('../sound/gameover.mp3');
         this.bgMusic.volume = 0.5;
         this.bgMusic.loop = true;
     }
@@ -21,9 +21,9 @@ class AudioController {
     match() {
         this.matchSound.play();
     }
-    victory() {
+    caseSolved() {
         this.stopMusic();
-        this.victorySound.play();
+        this.caseSolvedSound.play();
     }
     gameOver() {
         this.stopMusic();
@@ -31,7 +31,7 @@ class AudioController {
     }
 }
 
-class MixOrMatch {
+class Riddle {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
         this.totalTime = totalTime;
@@ -70,10 +70,10 @@ class MixOrMatch {
         this.audioController.gameOver();
         document.getElementById('game-over-text').classList.add('visible');
     }
-    victory() {
+    caseSolved() {
         clearInterval(this.countdown);
         this.audioController.victory();
-        document.getElementById('victory-text').classList.add('visible');
+        document.getElementById('case-solved-text').classList.add('visible');
     }
     hideCards() {
         this.cardsArray.forEach(card => {
@@ -110,7 +110,7 @@ class MixOrMatch {
         card2.classList.add('matched');
         this.audioController.match();
         if(this.matchedCards.length === this.cardsArray.length)
-            this.victory();
+            this.caseSolved();
     }
     cardMismatch(card1, card2) {
         this.busy = true;
@@ -144,7 +144,7 @@ if (document.readyState == 'loading') {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(100, cards);
+    let game = new Riddle(100, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
